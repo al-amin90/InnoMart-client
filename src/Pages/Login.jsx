@@ -90,7 +90,7 @@ const Login = () => {
                 <p className="text-center mt-7 ">
                   New here?{" "}
                   <span
-                    onClick={() => navigate("/register")}
+                    onClick={() => navigate("/singUp")}
                     className="font-normal duration-300 transition-all text-[#ff5537] underline cursor-pointer"
                   >
                     Create a New Account
