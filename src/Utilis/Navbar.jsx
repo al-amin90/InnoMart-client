@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -45,7 +46,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal gap-2 px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="bg-[#FFA835] rounded-full text-white cursor-pointer px-5 font-medium py-2">Sing Up</a>
+          <Link to="/singUp" className="bg-[#FFA835] rounded-full text-white cursor-pointer px-5 font-medium py-2">Sing Up</Link>
         </div>
       </div>
     </div>
