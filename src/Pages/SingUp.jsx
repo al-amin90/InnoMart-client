@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import registerImg from "../assets/505.jpg";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialMediaLogin from "../Component/SocialMediaLogin";
 import useAuth from "../Hooks/useAuth";
 import { updateProfile } from "firebase/auth";
@@ -9,6 +9,7 @@ import { updateProfile } from "firebase/auth";
 const SingUp = () => {
   const { createUser } = useAuth();
   const [isShowed, setIsShowed] = useState(true);
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +28,7 @@ const SingUp = () => {
             displayName: name
         })
         console.log(result);
+        navigate("/")
     })
     .catch((error) => {
         console.log(error);
