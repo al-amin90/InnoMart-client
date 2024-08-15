@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
   const navLinks = (
     <div className="text-base font-semibold flex gap-4 *:cursor-pointer">
-      <li>Home</li>
+      <NavLink to="/">Home</NavLink>
       <li>Electronic</li>
       <li>Blog</li>
       <li>Pages</li>
@@ -45,8 +45,9 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-2 px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end">
-          <Link to="/singUp" className="bg-[#FFA835] rounded-full text-white cursor-pointer px-5 font-medium py-2">Sing Up</Link>
+        <div className="navbar-end gap-3">
+          <Link to="/login" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-2 md:px-5 font-medium py-1 md:py-2">Login</Link>
+          <Link to="/singUp" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-2 md:px-5 font-medium py-1 md:py-2">Sing Up</Link>
         </div>
       </div>
     </div>

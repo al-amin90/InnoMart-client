@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import registerImg from "../assets/505.jpg";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import SocialMediaLogin from "../Component/SocialMediaLogin";
+import { useState } from 'react';
+import LoginImg from "../assets/login.jpg";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import SocialMediaLogin from '../Component/SocialMediaLogin';
 
-const SingUp = () => {
-const [isShowed ,setIsShowed] = useState(true)
+const Login = () => {
+const navigate = useNavigate()
+    const [isShowed ,setIsShowed] = useState(true)
 
-const handleSubmit = {
+    const handleSubmit = {
 
-}
+    }
 
-  return (
-    <div>
-      <div className="max-w-[1920px] pt-[34px] mx-auto md:w-[85%] pb-10">
+    return (
+        <div className="max-w-[1920px] md:pt-[64px] mx-auto md:w-[85%] pb-10">
         <div className=" rounded-3xl lg:shadow ">
-          <div className="w-full justify-center items-center flex-col lg:flex-row flex">
-            <div className="w-full  lg:w-1/2">
+          <div className="w-full justify-center items-center flex-col lg:flex-row-reverse flex">
+            <div className="w-full py-8 lg:w-1/2">
               <img
-                src={registerImg}
+                src={LoginImg}
                 className="object-cover rounded-xl object-center"
                 alt=""
               />
@@ -28,7 +28,7 @@ const handleSubmit = {
               <div className=" p-5 ">
                 <div className="pb-8 ">
                   <p className="text-3xl font-bold  relative z-10  text-[#3CC6CE] text-center underline">
-                    Register Here!
+                    Login Here!
                   </p>
                 </div>
 
@@ -36,17 +36,6 @@ const handleSubmit = {
                   onSubmit={handleSubmit}
                   className="space-y-5 w-full "
                 >
-                  <div>
-                    <div className="border  border-solid border-[#5B5A5A] p-3 w-full rounded-md">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                        className="px-4    py-1 w-full focus:outline-0"
-                      />
-                    </div>
-                  </div>
 
                   <div>
                     <fieldset className="border border-solid border-[#5B5A5A] p-3 w-full rounded-md">
@@ -86,30 +75,31 @@ const handleSubmit = {
                     type="submit"
                     className="py-4 w-full px-5 text-lg  bg-[#3CC6CE] rounded-full m-auto hover:shadow-xl font-semibold"
                   >
-                    Sing Up
+                    Login
                   </button>
                 </form>
 
-                <div className=" mt-7 text-center mb-6 font-medium text-lg">
-                  Already have an account?{" "}
-                  <Link
-                    to="/login"
-                    className=" font-normal duration-300 cursor-pointer transition-all hover:text-[#f67f6b] text-[#3CC6CE] underline"
-                  >
-                    Login
-                  </Link>
-                </div>
-                <p className="text-center mt-6 divider divider-neutral ">
+                <div className="">
+                  <p className="text-center mt-7 ">
+                    New here?{" "}
+                    <span
+                      onClick={() => navigate("/register")}
+                      className="font-normal duration-300 transition-all text-[#ff5537] underline cursor-pointer"
+                    >
+                      Create a New Account
+                    </span>
+                  </p>
+                  <p className="text-center mt-6 divider divider-neutral ">
                     Or sign in with
                   </p>
                   <SocialMediaLogin></SocialMediaLogin>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
 };
 
-export default SingUp;
+export default Login;
