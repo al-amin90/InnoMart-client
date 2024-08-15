@@ -4,16 +4,35 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SocialMediaLogin from "../Component/SocialMediaLogin";
 import useAuth from "../Hooks/useAuth";
+import { updateProfile } from "firebase/auth";
 
 const SingUp = () => {
+  const { createUser } = useAuth();
+  const [isShowed, setIsShowed] = useState(true);
 
-    const {a} = useAuth()
-const [isShowed ,setIsShowed] = useState(true)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const from = e.target;
 
-console.log(a);
-const handleSubmit = {
+    const name = from.name.value;
+    const email = from.email.value;
+    const password = from.password.value;
 
-}
+    console.log(name, email, password);
+
+    // create new user
+    createUser(email, password)
+    .then((result) => {
+        updateProfile(result.user, {
+            displayName: name
+        })
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    }
+    )
+  };
 
   return (
     <div>
@@ -36,10 +55,7 @@ const handleSubmit = {
                   </p>
                 </div>
 
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-5 w-full "
-                >
+                <form onSubmit={handleSubmit} className="space-y-5 w-full ">
                   <div>
                     <div className="border  border-solid border-[#5B5A5A] p-3 w-full rounded-md">
                       <input
@@ -56,7 +72,7 @@ const handleSubmit = {
                     <fieldset className="border border-solid border-[#5B5A5A] p-3 w-full rounded-md">
                       <input
                         type="email"
-                        name="email"                      
+                        name="email"
                         id="email"
                         placeholder="Email"
                         className="px-4 py-1  w-full focus:outline-0"
@@ -82,10 +98,9 @@ const handleSubmit = {
                           <FaEye className=" cursor-pointer" />
                         )}
                       </div>
-                    </fieldset>                    
+                    </fieldset>
                   </div>
 
-           
                   <button
                     type="submit"
                     className="py-4 w-full px-5 text-lg  bg-[#3CC6CE] rounded-full m-auto hover:shadow-xl font-semibold"
@@ -104,9 +119,9 @@ const handleSubmit = {
                   </Link>
                 </div>
                 <p className="text-center mt-6 divider divider-neutral ">
-                    Or sign in with
-                  </p>
-                  <SocialMediaLogin></SocialMediaLogin>
+                  Or sign in with
+                </p>
+                <SocialMediaLogin></SocialMediaLogin>
               </div>
             </div>
           </div>

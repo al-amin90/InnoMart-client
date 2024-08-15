@@ -3,13 +3,25 @@ import LoginImg from "../assets/login.jpg";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import SocialMediaLogin from '../Component/SocialMediaLogin';
+import useAuth from '../Hooks/useAuth';
 
 const Login = () => {
 const navigate = useNavigate()
-    const [isShowed ,setIsShowed] = useState(true)
+    const [isShowed ,setIsShowed] = useState(true);
+    const {loginUser} = useAuth();
 
-    const handleSubmit = {
+    const handleSubmit = e => {
+        e.preventDefault();
 
+        const from = e.target;
+        const email = from.email.value;
+        const password = from.password.value;
+        console.log(email, password);
+
+        loginUser(email, password)
+        .then(result => {
+            console.log(result.user);
+        })
     }
 
     return (

@@ -1,9 +1,15 @@
 import facebook from '../assets/Facebook.png';
+import useAuth from '../Hooks/useAuth';
 
 const SocialMediaLogin = () => {
+    const {logInWithGoogle} = useAuth()
 
-    const loginSocial = {
-
+    const loginSocial = () => {
+        logInWithGoogle()
+        .then((result) => {
+            console.log(result.user);
+        })
+  
     }
 
     return (
