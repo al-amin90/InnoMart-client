@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import registerImg from "../assets/505.jpg";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SocialMediaLogin from "../Component/SocialMediaLogin";
+import useAuth from "../Hooks/useAuth";
 
 const SingUp = () => {
+
+    const {a} = useAuth()
 const [isShowed ,setIsShowed] = useState(true)
 
+console.log(a);
 const handleSubmit = {
 
 }
