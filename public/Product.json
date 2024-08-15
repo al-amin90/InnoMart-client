@@ -1,362 +1,402 @@
 [
-    {
-        "productName": "Huawei MatePad Pro 12.6",
-        "productImage": "https://i.ibb.co/hs08QhG/9719b47d96ab49c0500344fd1ab450a9.jpg",
-        "description": "Premium tablet with OLED display, Kirin 9000E processor, and HarmonyOS.",
-        "price": 799.99,
-        "category": "Tablets",
-        "ratings": 4.6,
-        "creationDate": "2024-08-09T01:00:00Z"
-    },
-    {
-        "productName": "Sony Xperia Tablet Z4",
-        "productImage": "https://i.ibb.co/G9NgKpw/24c624fb782edcae3be139a2f19264b4.jpg",
-        "description": "Lightweight and waterproof tablet with 2K display, powerful processor, and long battery life.",
-        "price": 749.99,
-        "category": "Tablets",
-        "ratings": 4.5,
-        "creationDate": "2024-08-09T00:15:00Z"
-    },
-    {
-        "productName": "Asus ROG Flow Z13",
-        "productImage": "https://i.ibb.co/7QhB8TF/fdc54c46d5206f6d50696bdd5a69316d.jpg",
-        "description": "Gaming tablet with detachable keyboard, Intel Core i9, and NVIDIA GeForce RTX graphics.",
-        "price": 1999.99,
-        "category": "Tablets",
-        "ratings": 4.8,
-        "creationDate": "2024-08-08T23:30:00Z"
-    },
-    {
-        "productName": "Apple Watch Series 8",
-        "productImage": "https://i.ibb.co/jZggvj2/27a32121cea099dec843e91095247824.jpg",
-        "description": "Smartwatch with advanced health tracking, always-on Retina display, and seamless integration with iOS.",
-        "price": 399.99,
-        "category": "Wearables",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T22:45:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Watch 5",
-        "productImage": "https://i.ibb.co/f9466mX/eb1c0a15dd2c0f8567839d7bc7dc6e84.jpg",
-        "description": "Advanced smartwatch with health monitoring, AMOLED display, and long battery life.",
-        "price": 349.99,
-        "category": "Wearables",
-        "ratings": 4.7,
-        "creationDate": "2024-08-08T22:00:00Z"
-    },
-    {
-        "productName": "Huawei Watch GT 3 Pro",
-        "productImage": "https://i.ibb.co/jym6dC9/d0614e4fbe742a621ada66c3338c76bb.jpg",
-        "description": "Premium smartwatch with sapphire glass, titanium case, and advanced health features.",
-        "price": 329.99,
-        "category": "Wearables",
-        "ratings": 4.6,
-        "creationDate": "2024-08-08T21:15:00Z"
-    },
-    {
-        "productName": "Sony WF-1000XM4",
-        "productImage": "https://i.ibb.co/sm1vq0K/b170e47629c41c8263bb53eed7c686f5.jpg",
-        "description": "Industry-leading noise-canceling earbuds with superior sound quality and long battery life.",
-        "price": 279.99,
-        "category": "Audio",
-        "ratings": 4.8,
-        "creationDate": "2024-08-08T20:30:00Z"
-    },
-    {
-        "productName": "Asus ROG Strix Go 2.4",
-        "productImage": "https://i.ibb.co/sHv3k86/22a66db5762b745c66b0de0b1f375ef8.jpg",
-        "description": "Wireless gaming headset with low-latency 2.4GHz connection and AI noise-canceling microphone.",
-        "price": 199.99,
-        "category": "Audio",
-        "ratings": 4.7,
-        "creationDate": "2024-08-08T19:45:00Z"
-    },
-    {
-        "productName": "Apple AirPods Pro",
-        "productImage": "https://i.ibb.co/P1XPppR/b0e9b140514cd4de231c4425dd9779fd.jpg",
-        "description": "Next-generation AirPods with active noise cancellation, adaptive EQ, and spatial audio.",
-        "price": 249.99,
-        "category": "Audio",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T19:00:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Buds 2 ",
-        "productImage": "https://i.ibb.co/yVcRfwY/23cba89c84c63cc91f1b2c93a07a98e2.jpg",
-        "description": "Premium wireless earbuds with ANC, 360 Audio, and compact design.",
-        "price": 229.99,
-        "category": "Audio",
-        "ratings": 4.6,
-        "creationDate": "2024-08-08T18:15:00Z"
-    },
-    {
-        "productName": "Huawei FreeBuds Pro 2",
-        "productImage": "https://i.ibb.co/V2pN79Y/8fc9129b86c34074b4856651787af5a1.jpg",
-        "description": "High-quality wireless earbuds with dual driver system and active noise cancellation.",
-        "price": 199.99,
-        "category": "Audio",
-        "ratings": 4.5,
-        "creationDate": "2024-08-08T17:30:00Z"
-    },
-    {
-        "productName": "Sony WH-1000XM5",
-        "productImage": "https://i.ibb.co/DLFwYNM/07092c95977547c665bdd9b91aa5a4c0.jpg",
-        "description": "Over-ear noise-canceling headphones with superior sound quality and all-day comfort.",
-        "price": 349.99,
-        "category": "Audio",
-        "ratings": 4.8,
-        "creationDate": "2024-08-08T16:45:00Z"
-    },
-    {
-        "productName": "Asus ROG Zephyrus G14",
-        "productImage": "https://i.ibb.co/jvTSp7Y/138f9271f3e2dd24a38b5b2462befb47.jpg",
-        "description": "Compact gaming laptop with Ryzen 9, NVIDIA GeForce RTX 3060, and high refresh rate display.",
-        "price": 1499.99,
-        "category": "Laptops",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T16:00:00Z"
-    },
-    {
-        "productName": "Apple iPad Air (5th Gen)",
-        "productImage": "https://i.ibb.co/CmmKcDf/d62a7f3030cb8873d45dedbe6cf9ce47.jpg",
-        "description": "Lightweight tablet with M1 chip, 10.9-inch Liquid Retina display, and Touch ID.",
-        "price": 599.99,
-        "category": "Tablets",
-        "ratings": 4.8,
-        "creationDate": "2024-08-08T15:15:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Tab A8",
-        "productImage": "https://i.ibb.co/ZLZWPKM/2cfd7d945bd1b48391ece4d01651ce74.jpg",
-        "description": "Affordable Android tablet with 10.5-inch display, quad speakers, and expandable storage.",
-        "price": 249.99,
-        "category": "Tablets",
-        "ratings": 4.5,
-        "creationDate": "2024-08-08T14:30:00Z"
-    },
-    {
-        "productName": "Huawei MatePad 11",
-        "productImage": "https://i.ibb.co/f0Z7Kqd/e1fd228e3dad669ac84700fdae53443e.jpg",
-        "description": "Versatile tablet with 120Hz display, Snapdragon 865, and support for M-Pencil.",
-        "price": 499.99,
-        "category": "Tablets",
-        "ratings": 4.7,
-        "creationDate": "2024-08-08T13:45:00Z"
-    },
-    {
-        "productName": "Sony Xperia 5 III",
-        "productImage": "https://i.ibb.co/t2Z2jmB/6450f641691dc6c2fb38f5ec9626df17.jpg",
-        "description": "Compact smartphone with 120Hz OLED display, triple camera system, and 5G connectivity.",
-        "price": 899.99,
-        "category": "Smartphones",
-        "ratings": 4.6,
-        "creationDate": "2024-08-08T13:00:00Z"
-    },
-    {
-        "productName": "Asus VivoBook S14",
-        "productImage": "https://i.ibb.co/fk4KtLj/9073aacdaf7f8b7e522335d1cb107f17.jpg",
-        "description": "Stylish and portable laptop with Intel Core i7, 14-inch display, and backlit keyboard.",
-        "price": 749.99,
-        "category": "Laptops",
-        "ratings": 4.5,
-        "creationDate": "2024-08-08T12:15:00Z"
-    },
-    {
-        "productName": "Apple Mac Mini (M1)",
-        "productImage": "https://i.ibb.co/zZh0Yp2/58b476b323653bf173b6c795cffeee5e.jpg",
-        "description": "Compact desktop with Apple's M1 chip, macOS Big Sur, and up to 16GB RAM.",
-        "price": 699.99,
-        "category": "Desktops",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T11:30:00Z"
-    },
-    {
-        "productName": "Samsung Odyssey G7",
-        "productImage": "https://i.ibb.co/8KxMxsx/eecd287bb4b8f2ca0b8c5ba4640840e3.jpg",
-        "description": "32-inch curved gaming monitor with QHD resolution, 240Hz refresh rate, and G-Sync compatibility.",
-        "price": 799.99,
-        "category": "Monitors",
-        "ratings": 4.8,
-        "creationDate": "2024-08-08T10:45:00Z"
-    },
-    {
-        "productName": "Huawei MateView GT",
-        "productImage": "https://i.ibb.co/Kj0xZdC/ca90c36886646ae27dc4554e63351b15.jpg",
-        "description": "34-inch ultrawide curved monitor with soundbar, 165Hz refresh rate, and vibrant colors.",
-        "price": 699.99,
-        "category": "Monitors",
-        "ratings": 4.7,
-        "creationDate": "2024-08-08T10:00:00Z"
-    },
-    {
-        "productName": "Sony Bravia XR A90J",
-        "productImage": "https://i.ibb.co/t4VT8wx/8d94db00c9a195856a2dff542f1898fb.jpg",
-        "description": "OLED TV with Cognitive Processor XR, 4K resolution, and immersive audio experience.",
-        "price": 2999.99,
-        "category": "Televisions",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T09:15:00Z"
-    },
-    {
-        "productName": "Asus TUF Gaming VG27AQ",
-        "productImage": "https://i.ibb.co/QngDbtd/422bfff2b6236c156a6211ef61f3b57c.jpg",
-        "description": "27-inch QHD gaming monitor with 165Hz refresh rate, G-Sync, and HDR10 support.",
-        "price": 499.99,
-        "category": "Monitors",
-        "ratings": 4.6,
-        "creationDate": "2024-08-08T08:30:00Z"
-    },
-    {
-        "productName": "Apple HomePod mini",
-        "productImage": "https://i.ibb.co/zSC3r4W/fc86b58f46eb2045c1bfd6beaf71a391.jpg",
-        "description": "Smart speaker with Siri, 360-degree audio, and seamless integration with Apple devices.",
-        "price": 99.99,
-        "category": "Smart Home",
-        "ratings": 4.8,
-        "creationDate": "2024-08-08T07:45:00Z"
-    },
-    {
-        "productName": "Samsung SmartThings",
-        "productImage": "https://i.ibb.co/YcTzpRQ/888bc271885b501b07b3e10f5ca3753f.jpg",
-        "description": "Smart home hub that connects and controls all your smart devices from one place.",
-        "price": 89.99,
-        "category": "Smart Home",
-        "ratings": 4.7,
-        "creationDate": "2024-08-08T07:00:00Z"
-    },
-    {
-        "productName": "Huawei Sound X",
-        "productImage": "https://i.ibb.co/8b60rc5/d3058cac448e55879310ecc047127773.jpg",
-        "description": "Premium smart speaker co-engineered with Devialet, featuring high-fidelity sound and powerful bass.",
-        "price": 299.99,
-        "category": "Audio",
-        "ratings": 4.6,
-        "creationDate": "2024-08-08T06:15:00Z"
-    },
-    {
-        "productName": "Sony PlayStation 5",
-        "productImage": "https://i.ibb.co/WW3CnxD/2fbae2bc285c94f736133290d8bd3723.jpg",
-        "description": "Next-gen gaming console with ultra-fast SSD, ray tracing, and immersive 3D audio.",
-        "price": 499.99,
-        "category": "Gaming",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T05:30:00Z"
-    },
-    {
-        "productName": "Asus ROG Strix Scar 17",
-        "productImage": "https://i.ibb.co/4m68YMc/52b41251a0bda732cfcbaef8b3e76f6b.jpg",
-        "description": "High-performance gaming laptop with Intel Core i9, RTX 3080, and 360Hz display.",
-        "price": 2799.99,
-        "category": "Laptops",
-        "ratings": 4.9,
-        "creationDate": "2024-08-08T04:45:00Z"
-    },
-    {
-        "productName": "Apple iPhone 14 Pro",
-        "productImage": "https://i.ibb.co/pj6bTqG/26be56634ad9773c9d8f6315cac2cba7.jpg",
-        "description": "The latest iPhone with A16 Bionic chip, ProMotion display, and advanced camera features.",
-        "price": 1199.99,
-        "category": "Smartphones",
-        "ratings": 4.8,
-        "creationDate": "2024-08-09T10:00:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy S22 Ultra",
-        "productImage": "https://i.ibb.co/BwJThPV/8d4862ea00ed6b72492ca7d30b42ea78.jpg",
-        "description": "High-end Samsung smartphone with S Pen, 108MP camera, and 5000mAh battery.",
-        "price": 1099.99,
-        "category": "Smartphones",
-        "ratings": 4.7,
-        "creationDate": "2024-08-09T09:00:00Z"
-    },
-    {
-        "productName": "Huawei P50 Pro",
-        "productImage": "https://i.ibb.co/zrSqhnK/7bcfd781c0879c1ef9d1a7fdddde12d3.jpg",
-        "description": "Premium smartphone from Huawei with stunning display and powerful camera setup.",
-        "price": 999.99,
-        "category": "Smartphones",
-        "ratings": 4.6,
-        "creationDate": "2024-08-09T08:30:00Z"
-    },
-    {
-        "productName": "Sony Xperia 1 IV",
-        "productImage": "https://i.ibb.co/52Vc9gx/72b00a69ebb9831adb2992525a940d62.jpg",
-        "description": "Sony's flagship phone with 4K HDR OLED display and professional-grade camera.",
-        "price": 1299.99,
-        "category": "Smartphones",
-        "ratings": 4.5,
-        "creationDate": "2024-08-09T07:45:00Z"
-    },
-    {
-        "productName": "Asus ROG Phone 6",
-        "productImage": "https://i.ibb.co/K2VWzf1/94f434d04cb4bc49fefdb1c6c65710bc.jpg",
-        "description": "Gaming smartphone with Snapdragon 8+ Gen 1, 165Hz AMOLED display, and large battery.",
-        "price": 999.99,
-        "category": "Smartphones",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T07:00:00Z"
-    },
-    {
-        "productName": "Apple MacBook Pro",
-        "productImage": "https://i.ibb.co/DpfsrQV/3991579a30706981cbf5c88375a60d8d.jpg",
-        "description": "Powerful laptop with M1 Max chip, 16-inch Retina display, and long battery life.",
-        "price": 2499.99,
-        "category": "Laptops",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T06:15:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Book Pro",
-        "productImage": "https://i.ibb.co/z8ZKLGk/8e4328338253987b3f8ccab383d27d27.jpg",
-        "description": "Slim and lightweight laptop with AMOLED display, Intel Evo platform, and long-lasting battery.",
-        "price": 1199.99,
-        "category": "Laptops",
-        "ratings": 4.7,
-        "creationDate": "2024-08-09T05:30:00Z"
-    },
-    {
-        "productName": "Huawei MateBook X Pro",
-        "productImage": "https://i.ibb.co/02SZWBs/dae659aee8860acac3d78099b8609153.jpg",
-        "description": "High-end ultrabook with 3K FullView display, powerful performance, and premium design.",
-        "price": 1599.99,
-        "category": "Laptops",
-        "ratings": 4.8,
-        "creationDate": "2024-08-09T04:45:00Z"
-    },
-    {
-        "productName": "Sony Vaio SX14",
-        "productImage": "https://i.ibb.co/NWyvt7X/fd15895479f3c779fafa6e360e458e87.jpg",
-        "description": "Elegant and lightweight laptop with 4K display, powerful performance, and premium build quality.",
-        "price": 2099.99,
-        "category": "Laptops",
-        "ratings": 4.6,
-        "creationDate": "2024-08-09T04:00:00Z"
-    },
-    {
-        "productName": "Asus ZenBook Duo",
-        "productImage": "https://i.ibb.co/S6qcqpg/d7c80f0f68ae8ae83c8f6844563c1c0b.jpg",
-        "description": "Innovative laptop with dual-screen design, Intel Core i7, and dedicated graphics.",
-        "price": 1499.99,
-        "category": "Laptops",
-        "ratings": 4.8,
-        "creationDate": "2024-08-09T03:15:00Z"
-    },
-    {
-        "productName": "Apple iPad Pro 12.9-inch",
-        "productImage": "https://i.ibb.co/RYmMZ20/956c75a54a741a84cb890dc206a416b9.jpg",
-        "description": "Professional tablet with M1 chip, Liquid Retina XDR display, and support for Apple Pencil.",
-        "price": 1099.99,
-        "category": "Tablets",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T02:30:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Tab S8 Ultra",
-        "productImage": "https://i.ibb.co/Bq64FZf/8e98a714c87e119fcb88fdabb10efb4b.jpg",
-        "description": "High-performance Android tablet with a large AMOLED display and powerful features.",
-        "price": 899.99,
-        "category": "Tablets",
-        "ratings": 4.7,
-        "creationDate": "2024-08-09T01:45:00Z"
-    }
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei MatePad Pro 12.6",
+    "productImage": "https://i.ibb.co/hs08QhG/9719b47d96ab49c0500344fd1ab450a9.jpg",
+    "description": "Premium tablet with OLED display, Kirin 9000E processor, and HarmonyOS.",
+    "price": 799.99,
+    "category": "Tablets",
+    "ratings": 4.6,
+    "creationDate": "2024-08-09T01:00:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony Xperia Tablet Z4",
+    "productImage": "https://i.ibb.co/G9NgKpw/24c624fb782edcae3be139a2f19264b4.jpg",
+    "description": "Lightweight and waterproof tablet with 2K display, powerful processor, and long battery life.",
+    "price": 749.99,
+    "category": "Tablets",
+    "ratings": 4.5,
+    "creationDate": "2024-08-09T00:15:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus ROG Flow Z13",
+    "productImage": "https://i.ibb.co/7QhB8TF/fdc54c46d5206f6d50696bdd5a69316d.jpg",
+    "description": "Gaming tablet with detachable keyboard, Intel Core i9, and NVIDIA GeForce RTX graphics.",
+    "price": 1999.99,
+    "category": "Tablets",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T23:30:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple Watch Series 8",
+    "productImage": "https://i.ibb.co/jZggvj2/27a32121cea099dec843e91095247824.jpg",
+    "description": "Smartwatch with advanced health tracking, always-on Retina display, and seamless integration with iOS.",
+    "price": 399.99,
+    "category": "Wearables",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T22:45:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Galaxy Watch 5",
+    "productImage": "https://i.ibb.co/f9466mX/eb1c0a15dd2c0f8567839d7bc7dc6e84.jpg",
+    "description": "Advanced smartwatch with health monitoring, AMOLED display, and long battery life.",
+    "price": 349.99,
+    "category": "Wearables",
+    "ratings": 4.7,
+    "creationDate": "2024-08-08T22:00:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei Watch GT 3 Pro",
+    "productImage": "https://i.ibb.co/jym6dC9/d0614e4fbe742a621ada66c3338c76bb.jpg",
+    "description": "Premium smartwatch with sapphire glass, titanium case, and advanced health features.",
+    "price": 329.99,
+    "category": "Wearables",
+    "ratings": 4.6,
+    "creationDate": "2024-08-08T21:15:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony WF-1000XM4",
+    "productImage": "https://i.ibb.co/sm1vq0K/b170e47629c41c8263bb53eed7c686f5.jpg",
+    "description": "Industry-leading noise-canceling earbuds with superior sound quality and long battery life.",
+    "price": 279.99,
+    "category": "Audio",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T20:30:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus ROG Strix Go 2.4",
+    "productImage": "https://i.ibb.co/sHv3k86/22a66db5762b745c66b0de0b1f375ef8.jpg",
+    "description": "Wireless gaming headset with low-latency 2.4GHz connection and AI noise-canceling microphone.",
+    "price": 199.99,
+    "category": "Audio",
+    "ratings": 4.7,
+    "creationDate": "2024-08-08T19:45:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple AirPods Pro",
+    "productImage": "https://i.ibb.co/P1XPppR/b0e9b140514cd4de231c4425dd9779fd.jpg",
+    "description": "Next-generation AirPods with active noise cancellation, adaptive EQ, and spatial audio.",
+    "price": 249.99,
+    "category": "Audio",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T19:00:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Galaxy Buds 2",
+    "productImage": "https://i.ibb.co/yVcRfwY/23cba89c84c63cc91f1b2c93a07a98e2.jpg",
+    "description": "Premium wireless earbuds with ANC, 360 Audio, and compact design.",
+    "price": 229.99,
+    "category": "Audio",
+    "ratings": 4.6,
+    "creationDate": "2024-08-08T18:15:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei FreeBuds Pro 2",
+    "productImage": "https://i.ibb.co/V2pN79Y/8fc9129b86c34074b4856651787af5a1.jpg",
+    "description": "High-quality wireless earbuds with dual driver system and active noise cancellation.",
+    "price": 199.99,
+    "category": "Audio",
+    "ratings": 4.5,
+    "creationDate": "2024-08-08T17:30:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony WH-1000XM5",
+    "productImage": "https://i.ibb.co/DLFwYNM/07092c95977547c665bdd9b91aa5a4c0.jpg",
+    "description": "Over-ear noise-canceling headphones with superior sound quality and all-day comfort.",
+    "price": 349.99,
+    "category": "Audio",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T16:45:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus ROG Zephyrus G14",
+    "productImage": "https://i.ibb.co/jvTSp7Y/138f9271f3e2dd24a38b5b2462befb47.jpg",
+    "description": "Compact gaming laptop with Ryzen 9, NVIDIA GeForce RTX 3060, and high refresh rate display.",
+    "price": 1499.99,
+    "category": "Laptops",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T16:00:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple iPad Air (5th Gen)",
+    "productImage": "https://i.ibb.co/CmmKcDf/d62a7f3030cb8873d45dedbe6cf9ce47.jpg",
+    "description": "Lightweight tablet with M1 chip, 10.9-inch Liquid Retina display, and Touch ID.",
+    "price": 599.99,
+    "category": "Tablets",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T15:15:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Galaxy Tab A8",
+    "productImage": "https://i.ibb.co/ZLZWPKM/2cfd7d945bd1b48391ece4d01651ce74.jpg",
+    "description": "Affordable Android tablet with 10.5-inch display, quad speakers, and expandable storage.",
+    "price": 249.99,
+    "category": "Tablets",
+    "ratings": 4.5,
+    "creationDate": "2024-08-08T14:30:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei MatePad 11",
+    "productImage": "https://i.ibb.co/f0Z7Kqd/3ef0fcda48f945e56ed44d31bbf3f612.jpg",
+    "description": "High-performance tablet with 120Hz display, Snapdragon 865, and multi-screen collaboration.",
+    "price": 499.99,
+    "category": "Tablets",
+    "ratings": 4.7,
+    "creationDate": "2024-08-08T13:45:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Odyssey G7",
+    "productImage": "https://i.ibb.co/ZLZWPKM/2cfd7d945bd1b48391ece4d01651ce74.jpg",
+    "description": "Curved gaming monitor with 240Hz refresh rate, QHD resolution, and G-Sync compatibility.",
+    "price": 699.99,
+    "category": "Monitors",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T10:45:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony Xperia 5 III",
+    "productImage": "https://i.ibb.co/t2Z2jmB/6450f641691dc6c2fb38f5ec9626df17.jpg",
+    "description": "Compact smartphone with 120Hz OLED display, triple camera system, and 5G connectivity.",
+    "price": 899.99,
+    "category": "Smartphones",
+    "ratings": 4.6,
+    "creationDate": "2024-08-08T13:00:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus VivoBook S14",
+    "productImage": "https://i.ibb.co/fk4KtLj/9073aacdaf7f8b7e522335d1cb107f17.jpg",
+    "description": "Stylish and portable laptop with Intel Core i7, 14-inch display, and backlit keyboard.",
+    "price": 749.99,
+    "category": "Laptops",
+    "ratings": 4.5,
+    "creationDate": "2024-08-08T12:15:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple Mac Mini (M1)",
+    "productImage": "https://i.ibb.co/zZh0Yp2/58b476b323653bf173b6c795cffeee5e.jpg",
+    "description": "Compact desktop with Apple's M1 chip, macOS Big Sur, and up to 16GB RAM.",
+    "price": 699.99,
+    "category": "Desktops",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T11:30:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei MateView GT",
+    "productImage": "https://i.ibb.co/Kj0xZdC/ca90c36886646ae27dc4554e63351b15.jpg",
+    "description": "34-inch ultrawide curved monitor with soundbar, 165Hz refresh rate, and vibrant colors.",
+    "price": 699.99,
+    "category": "Monitors",
+    "ratings": 4.7,
+    "creationDate": "2024-08-08T10:00:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony Bravia XR A90J",
+    "productImage": "https://i.ibb.co/t4VT8wx/8d94db00c9a195856a2dff542f1898fb.jpg",
+    "description": "OLED TV with Cognitive Processor XR, 4K resolution, and immersive audio experience.",
+    "price": 2999.99,
+    "category": "Televisions",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T09:15:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple HomePod mini",
+    "productImage": "https://i.ibb.co/zSC3r4W/fc86b58f46eb2045c1bfd6beaf71a391.jpg",
+    "description": "Smart speaker with Siri, 360-degree audio, and seamless integration with Apple devices.",
+    "price": 99.99,
+    "category": "Smart Home",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T07:45:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung SmartThings",
+    "productImage": "https://i.ibb.co/YcTzpRQ/888bc271885b501b07b3e10f5ca3753f.jpg",
+    "description": "Smart home hub that connects and controls all your smart devices from one place.",
+    "price": 89.99,
+    "category": "Smart Home",
+    "ratings": 4.7,
+    "creationDate": "2024-08-08T07:00:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei Sound X",
+    "productImage": "https://i.ibb.co/8b60rc5/d3058cac448e55879310ecc047127773.jpg",
+    "description": "Premium smart speaker co-engineered with Devialet, featuring high-fidelity sound and powerful bass.",
+    "price": 299.99,
+    "category": "Audio",
+    "ratings": 4.6,
+    "creationDate": "2024-08-08T06:15:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony PlayStation 5",
+    "productImage": "https://i.ibb.co/WW3CnxD/2fbae2bc285c94f736133290d8bd3723.jpg",
+    "description": "Next-gen gaming console with ultra-fast SSD, ray tracing, and immersive 3D audio.",
+    "price": 499.99,
+    "category": "Gaming",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T05:30:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus ROG Strix Scar 17",
+    "productImage": "https://i.ibb.co/4m68YMc/52b41251a0bda732cfcbaef8b3e76f6b.jpg",
+    "description": "High-performance gaming laptop with Intel Core i9, RTX 3080, and 360Hz display.",
+    "price": 2799.99,
+    "category": "Laptops",
+    "ratings": 4.9,
+    "creationDate": "2024-08-08T04:45:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple iPhone 14 Pro",
+    "productImage": "https://i.ibb.co/pj6bTqG/26be56634ad9773c9d8f6315cac2cba7.jpg",
+    "description": "The latest iPhone with A16 Bionic chip, ProMotion display, and advanced camera features.",
+    "price": 1199.99,
+    "category": "Smartphones",
+    "ratings": 4.8,
+    "creationDate": "2024-08-09T10:00:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Galaxy S22 Ultra",
+    "productImage": "https://i.ibb.co/BwJThPV/8d4862ea00ed6b72492ca7d30b42ea78.jpg",
+    "description": "High-end Samsung smartphone with S Pen, 108MP camera, and 5000mAh battery.",
+    "price": 1099.99,
+    "category": "Smartphones",
+    "ratings": 4.7,
+    "creationDate": "2024-08-09T09:00:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei P50 Pro",
+    "productImage": "https://i.ibb.co/zrSqhnK/7bcfd781c0879c1ef9d1a7fdddde12d3.jpg",
+    "description": "Premium smartphone from Huawei with stunning display and powerful camera setup.",
+    "price": 999.99,
+    "category": "Smartphones",
+    "ratings": 4.6,
+    "creationDate": "2024-08-09T08:30:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony Xperia 1 IV",
+    "productImage": "https://i.ibb.co/52Vc9gx/72b00a69ebb9831adb2992525a940d62.jpg",
+    "description": "Sony's flagship phone with 4K HDR OLED display and professional-grade camera.",
+    "price": 1299.99,
+    "category": "Smartphones",
+    "ratings": 4.5,
+    "creationDate": "2024-08-09T07:45:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus ROG Phone 6",
+    "productImage": "https://i.ibb.co/K2VWzf1/94f434d04cb4bc49fefdb1c6c65710bc.jpg",
+    "description": "Gaming smartphone with Snapdragon 8+ Gen 1, 165Hz AMOLED display, and large battery.",
+    "price": 999.99,
+    "category": "Smartphones",
+    "ratings": 4.9,
+    "creationDate": "2024-08-09T07:00:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple MacBook Pro",
+    "productImage": "https://i.ibb.co/DpfsrQV/3991579a30706981cbf5c88375a60d8d.jpg",
+    "description": "Powerful laptop with M1 Max chip, 16-inch Retina display, and long battery life.",
+    "price": 2499.99,
+    "category": "Laptops",
+    "ratings": 4.9,
+    "creationDate": "2024-08-09T06:15:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Galaxy Book Pro",
+    "productImage": "https://i.ibb.co/z8ZKLGk/8e4328338253987b3f8ccab383d27d27.jpg",
+    "description": "Slim and lightweight laptop with AMOLED display, Intel Evo platform, and long-lasting battery.",
+    "price": 1199.99,
+    "category": "Laptops",
+    "ratings": 4.7,
+    "creationDate": "2024-08-09T05:30:00Z"
+  },
+  {
+    "brandName": "Huawei",
+    "productName": "Huawei MateBook X Pro",
+    "productImage": "https://i.ibb.co/02SZWBs/dae659aee8860acac3d78099b8609153.jpg",
+    "description": "High-end ultrabook with 3K FullView display, powerful performance, and premium design.",
+    "price": 1599.99,
+    "category": "Laptops",
+    "ratings": 4.8,
+    "creationDate": "2024-08-09T04:45:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony Xperia 5 III",
+    "productImage": "https://i.ibb.co/t2Z2jmB/6450f641691dc6c2fb38f5ec9626df17.jpg",
+    "description": "Compact smartphone with 120Hz OLED display, triple camera system, and 5G connectivity.",
+    "price": 899.99,
+    "category": "Smartphones",
+    "ratings": 4.6,
+    "creationDate": "2024-08-08T13:00:00Z"
+  },
+  {
+    "brandName": "Sony",
+    "productName": "Sony Vaio SX14",
+    "productImage": "https://i.ibb.co/NWyvt7X/fd15895479f3c779fafa6e360e458e87.jpg",
+    "description": "Elegant and lightweight laptop with 4K display, powerful performance, and premium build quality.",
+    "price": 2099.99,
+    "category": "Laptops",
+    "ratings": 4.6,
+    "creationDate": "2024-08-09T04:00:00Z"
+  },
+  {
+    "brandName": "Asus",
+    "productName": "Asus ZenBook Duo",
+    "productImage": "https://i.ibb.co/S6qcqpg/d7c80f0f68ae8ae83c8f6844563c1c0b.jpg",
+    "description": "Innovative laptop with dual-screen design, Intel Core i7, and dedicated graphics.",
+    "price": 1499.99,
+    "category": "Laptops",
+    "ratings": 4.8,
+    "creationDate": "2024-08-09T03:15:00Z"
+  },
+  {
+    "brandName": "Apple",
+    "productName": "Apple iPad Pro 12.9-inch",
+    "productImage": "https://i.ibb.co/RYmMZ20/956c75a54a741a84cb890dc206a416b9.jpg",
+    "description": "Professional tablet with M1 chip, Liquid Retina XDR display, and support for Apple Pencil.",
+    "price": 1099.99,
+    "category": "Tablets",
+    "ratings": 4.9,
+    "creationDate": "2024-08-09T02:30:00Z"
+  },
+  {
+    "brandName": "Samsung",
+    "productName": "Samsung Galaxy Tab S8 Ultra",
+    "productImage": "https://i.ibb.co/Bq64FZf/8e98a714c87e119fcb88fdabb10efb4b.jpg",
+    "description": "High-performance Android tablet with a large AMOLED display and powerful features.",
+    "price": 899.99,
+    "category": "Tablets",
+    "ratings": 4.7,
+    "creationDate": "2024-08-09T01:45:00Z"
+  }
 ]
