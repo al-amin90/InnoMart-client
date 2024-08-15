@@ -68,7 +68,7 @@ const Footer = () => {
                             </ul>
                             <label className="border border-white input hidden md:flex px-3 w-full relative rounded-md mt-10 bg-transparent input-bordered items-center gap-2">
                                 <input type="text" className="grow text-sm rounded-full outline-none h-full" placeholder="Your Email" />
-                                <button className='px-5 absolute text-sm right-0 h-full bg-[#023022] text-white hover:bg-[#023022]/85 rounded-md'>Email</button>
+                                <button className='px-5 absolute text-sm right-0 h-full bg-[#FFA835] text-white hover:bg-[#023022]/85 rounded-md'>Email</button>
                             </label>
                         </div>
                         <div className="text-center text-sm md:text-left lg:col-span-3">

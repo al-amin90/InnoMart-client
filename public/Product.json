@@ -1,113 +1,5 @@
 [
     {
-        "productName": "Apple iPhone 14 Pro",
-        "productImage": "https://i.ibb.co/pj6bTqG/26be56634ad9773c9d8f6315cac2cba7.jpg",
-        "description": "The latest iPhone with A16 Bionic chip, ProMotion display, and advanced camera features.",
-        "price": 1199.99,
-        "category": "Smartphones",
-        "ratings": 4.8,
-        "creationDate": "2024-08-09T10:00:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy S22 Ultra",
-        "productImage": "https://i.ibb.co/BwJThPV/8d4862ea00ed6b72492ca7d30b42ea78.jpg",
-        "description": "High-end Samsung smartphone with S Pen, 108MP camera, and 5000mAh battery.",
-        "price": 1099.99,
-        "category": "Smartphones",
-        "ratings": 4.7,
-        "creationDate": "2024-08-09T09:00:00Z"
-    },
-    {
-        "productName": "Huawei P50 Pro",
-        "productImage": "https://i.ibb.co/zrSqhnK/7bcfd781c0879c1ef9d1a7fdddde12d3.jpg",
-        "description": "Premium smartphone from Huawei with stunning display and powerful camera setup.",
-        "price": 999.99,
-        "category": "Smartphones",
-        "ratings": 4.6,
-        "creationDate": "2024-08-09T08:30:00Z"
-    },
-    {
-        "productName": "Sony Xperia 1 IV",
-        "productImage": "https://i.ibb.co/52Vc9gx/72b00a69ebb9831adb2992525a940d62.jpg",
-        "description": "Sony's flagship phone with 4K HDR OLED display and professional-grade camera.",
-        "price": 1299.99,
-        "category": "Smartphones",
-        "ratings": 4.5,
-        "creationDate": "2024-08-09T07:45:00Z"
-    },
-    {
-        "productName": "Asus ROG Phone 6",
-        "productImage": "https://i.ibb.co/K2VWzf1/94f434d04cb4bc49fefdb1c6c65710bc.jpg",
-        "description": "Gaming smartphone with Snapdragon 8+ Gen 1, 165Hz AMOLED display, and large battery.",
-        "price": 999.99,
-        "category": "Smartphones",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T07:00:00Z"
-    },
-    {
-        "productName": "Apple MacBook Pro 16-inch",
-        "productImage": "https://i.ibb.co/DpfsrQV/3991579a30706981cbf5c88375a60d8d.jpg",
-        "description": "Powerful laptop with M1 Max chip, 16-inch Retina display, and long battery life.",
-        "price": 2499.99,
-        "category": "Laptops",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T06:15:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Book Pro",
-        "productImage": "https://i.ibb.co/z8ZKLGk/8e4328338253987b3f8ccab383d27d27.jpg",
-        "description": "Slim and lightweight laptop with AMOLED display, Intel Evo platform, and long-lasting battery.",
-        "price": 1199.99,
-        "category": "Laptops",
-        "ratings": 4.7,
-        "creationDate": "2024-08-09T05:30:00Z"
-    },
-    {
-        "productName": "Huawei MateBook X Pro",
-        "productImage": "https://i.ibb.co/02SZWBs/dae659aee8860acac3d78099b8609153.jpg",
-        "description": "High-end ultrabook with 3K FullView display, powerful performance, and premium design.",
-        "price": 1599.99,
-        "category": "Laptops",
-        "ratings": 4.8,
-        "creationDate": "2024-08-09T04:45:00Z"
-    },
-    {
-        "productName": "Sony Vaio SX14",
-        "productImage": "https://i.ibb.co/NWyvt7X/fd15895479f3c779fafa6e360e458e87.jpg",
-        "description": "Elegant and lightweight laptop with 4K display, powerful performance, and premium build quality.",
-        "price": 2099.99,
-        "category": "Laptops",
-        "ratings": 4.6,
-        "creationDate": "2024-08-09T04:00:00Z"
-    },
-    {
-        "productName": "Asus ZenBook Duo",
-        "productImage": "https://i.ibb.co/S6qcqpg/d7c80f0f68ae8ae83c8f6844563c1c0b.jpg",
-        "description": "Innovative laptop with dual-screen design, Intel Core i7, and dedicated graphics.",
-        "price": 1499.99,
-        "category": "Laptops",
-        "ratings": 4.8,
-        "creationDate": "2024-08-09T03:15:00Z"
-    },
-    {
-        "productName": "Apple iPad Pro 12.9-inch",
-        "productImage": "https://i.ibb.co/RYmMZ20/956c75a54a741a84cb890dc206a416b9.jpg",
-        "description": "Professional tablet with M1 chip, Liquid Retina XDR display, and support for Apple Pencil.",
-        "price": 1099.99,
-        "category": "Tablets",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T02:30:00Z"
-    },
-    {
-        "productName": "Samsung Galaxy Tab S8 Ultra",
-        "productImage": "https://i.ibb.co/Bq64FZf/8e98a714c87e119fcb88fdabb10efb4b.jpg",
-        "description": "High-performance Android tablet with a large AMOLED display and powerful features.",
-        "price": 899.99,
-        "category": "Tablets",
-        "ratings": 4.7,
-        "creationDate": "2024-08-09T01:45:00Z"
-    },
-    {
         "productName": "Huawei MatePad Pro 12.6",
         "productImage": "https://i.ibb.co/hs08QhG/9719b47d96ab49c0500344fd1ab450a9.jpg",
         "description": "Premium tablet with OLED display, Kirin 9000E processor, and HarmonyOS.",
@@ -180,7 +72,7 @@
         "creationDate": "2024-08-08T19:45:00Z"
     },
     {
-        "productName": "Apple AirPods Pro (2nd Gen)",
+        "productName": "Apple AirPods Pro",
         "productImage": "https://i.ibb.co/P1XPppR/b0e9b140514cd4de231c4425dd9779fd.jpg",
         "description": "Next-generation AirPods with active noise cancellation, adaptive EQ, and spatial audio.",
         "price": 249.99,
@@ -189,7 +81,7 @@
         "creationDate": "2024-08-08T19:00:00Z"
     },
     {
-        "productName": "Samsung Galaxy Buds 2 Pro",
+        "productName": "Samsung Galaxy Buds 2 ",
         "productImage": "https://i.ibb.co/yVcRfwY/23cba89c84c63cc91f1b2c93a07a98e2.jpg",
         "description": "Premium wireless earbuds with ANC, 360 Audio, and compact design.",
         "price": 229.99,
@@ -324,7 +216,7 @@
         "creationDate": "2024-08-08T07:45:00Z"
     },
     {
-        "productName": "Samsung SmartThings Hub",
+        "productName": "Samsung SmartThings",
         "productImage": "https://i.ibb.co/YcTzpRQ/888bc271885b501b07b3e10f5ca3753f.jpg",
         "description": "Smart home hub that connects and controls all your smart devices from one place.",
         "price": 89.99,
@@ -358,5 +250,113 @@
         "category": "Laptops",
         "ratings": 4.9,
         "creationDate": "2024-08-08T04:45:00Z"
+    },
+    {
+        "productName": "Apple iPhone 14 Pro",
+        "productImage": "https://i.ibb.co/pj6bTqG/26be56634ad9773c9d8f6315cac2cba7.jpg",
+        "description": "The latest iPhone with A16 Bionic chip, ProMotion display, and advanced camera features.",
+        "price": 1199.99,
+        "category": "Smartphones",
+        "ratings": 4.8,
+        "creationDate": "2024-08-09T10:00:00Z"
+    },
+    {
+        "productName": "Samsung Galaxy S22 Ultra",
+        "productImage": "https://i.ibb.co/BwJThPV/8d4862ea00ed6b72492ca7d30b42ea78.jpg",
+        "description": "High-end Samsung smartphone with S Pen, 108MP camera, and 5000mAh battery.",
+        "price": 1099.99,
+        "category": "Smartphones",
+        "ratings": 4.7,
+        "creationDate": "2024-08-09T09:00:00Z"
+    },
+    {
+        "productName": "Huawei P50 Pro",
+        "productImage": "https://i.ibb.co/zrSqhnK/7bcfd781c0879c1ef9d1a7fdddde12d3.jpg",
+        "description": "Premium smartphone from Huawei with stunning display and powerful camera setup.",
+        "price": 999.99,
+        "category": "Smartphones",
+        "ratings": 4.6,
+        "creationDate": "2024-08-09T08:30:00Z"
+    },
+    {
+        "productName": "Sony Xperia 1 IV",
+        "productImage": "https://i.ibb.co/52Vc9gx/72b00a69ebb9831adb2992525a940d62.jpg",
+        "description": "Sony's flagship phone with 4K HDR OLED display and professional-grade camera.",
+        "price": 1299.99,
+        "category": "Smartphones",
+        "ratings": 4.5,
+        "creationDate": "2024-08-09T07:45:00Z"
+    },
+    {
+        "productName": "Asus ROG Phone 6",
+        "productImage": "https://i.ibb.co/K2VWzf1/94f434d04cb4bc49fefdb1c6c65710bc.jpg",
+        "description": "Gaming smartphone with Snapdragon 8+ Gen 1, 165Hz AMOLED display, and large battery.",
+        "price": 999.99,
+        "category": "Smartphones",
+        "ratings": 4.9,
+        "creationDate": "2024-08-09T07:00:00Z"
+    },
+    {
+        "productName": "Apple MacBook Pro",
+        "productImage": "https://i.ibb.co/DpfsrQV/3991579a30706981cbf5c88375a60d8d.jpg",
+        "description": "Powerful laptop with M1 Max chip, 16-inch Retina display, and long battery life.",
+        "price": 2499.99,
+        "category": "Laptops",
+        "ratings": 4.9,
+        "creationDate": "2024-08-09T06:15:00Z"
+    },
+    {
+        "productName": "Samsung Galaxy Book Pro",
+        "productImage": "https://i.ibb.co/z8ZKLGk/8e4328338253987b3f8ccab383d27d27.jpg",
+        "description": "Slim and lightweight laptop with AMOLED display, Intel Evo platform, and long-lasting battery.",
+        "price": 1199.99,
+        "category": "Laptops",
+        "ratings": 4.7,
+        "creationDate": "2024-08-09T05:30:00Z"
+    },
+    {
+        "productName": "Huawei MateBook X Pro",
+        "productImage": "https://i.ibb.co/02SZWBs/dae659aee8860acac3d78099b8609153.jpg",
+        "description": "High-end ultrabook with 3K FullView display, powerful performance, and premium design.",
+        "price": 1599.99,
+        "category": "Laptops",
+        "ratings": 4.8,
+        "creationDate": "2024-08-09T04:45:00Z"
+    },
+    {
+        "productName": "Sony Vaio SX14",
+        "productImage": "https://i.ibb.co/NWyvt7X/fd15895479f3c779fafa6e360e458e87.jpg",
+        "description": "Elegant and lightweight laptop with 4K display, powerful performance, and premium build quality.",
+        "price": 2099.99,
+        "category": "Laptops",
+        "ratings": 4.6,
+        "creationDate": "2024-08-09T04:00:00Z"
+    },
+    {
+        "productName": "Asus ZenBook Duo",
+        "productImage": "https://i.ibb.co/S6qcqpg/d7c80f0f68ae8ae83c8f6844563c1c0b.jpg",
+        "description": "Innovative laptop with dual-screen design, Intel Core i7, and dedicated graphics.",
+        "price": 1499.99,
+        "category": "Laptops",
+        "ratings": 4.8,
+        "creationDate": "2024-08-09T03:15:00Z"
+    },
+    {
+        "productName": "Apple iPad Pro 12.9-inch",
+        "productImage": "https://i.ibb.co/RYmMZ20/956c75a54a741a84cb890dc206a416b9.jpg",
+        "description": "Professional tablet with M1 chip, Liquid Retina XDR display, and support for Apple Pencil.",
+        "price": 1099.99,
+        "category": "Tablets",
+        "ratings": 4.9,
+        "creationDate": "2024-08-09T02:30:00Z"
+    },
+    {
+        "productName": "Samsung Galaxy Tab S8 Ultra",
+        "productImage": "https://i.ibb.co/Bq64FZf/8e98a714c87e119fcb88fdabb10efb4b.jpg",
+        "description": "High-performance Android tablet with a large AMOLED display and powerful features.",
+        "price": 899.99,
+        "category": "Tablets",
+        "ratings": 4.7,
+        "creationDate": "2024-08-09T01:45:00Z"
     }
 ]
