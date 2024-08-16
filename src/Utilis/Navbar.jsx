@@ -4,7 +4,6 @@ import useAuth from "../Hooks/useAuth";
 
 const Navbar = () => {
   const {user} = useAuth()
-  console.log(user);
 
   const navLinks = (
     <div className="text-base font-semibold flex gap-4 *:cursor-pointer">
@@ -50,7 +49,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end gap-3">
           {
-            user? <h3 className="text-base font-semibold"><span className="text-[#FFA835]">User:</span> {user?.displayName}</h3> :  <div>
+            user? <h3 className="text-base font-semibold"><span className="text-[#FFA835]">User:</span> {user?.displayName}</h3> :  <div className="gap-2">
             <Link to="/login" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-3 md:px-5 font-medium py-1 md:py-2">Login</Link>
             <Link to="/singUp" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-3 md:px-5 font-medium py-1 md:py-2">Sing Up</Link>
             </div>

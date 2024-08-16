@@ -16,7 +16,7 @@ const AllProduct = () => {
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}&category=${category}&brandName=${brandName}&page=${currentPage}&size=${itemsPerPage}`
+        `https://inno-mart-server.vercel.app/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}&category=${category}&brandName=${brandName}&page=${currentPage}&size=${itemsPerPage}`
       );
       setAllProduct(data.result);
       setCount(data.count.length);
@@ -45,7 +45,6 @@ const AllProduct = () => {
   const handleRangeSearch = (e) => {
     e.preventDefault();
     const name = e.target.search.value;
-    console.log(name);
   };
 
   // category & brand names
@@ -62,13 +61,12 @@ const AllProduct = () => {
   ];
   const brandNames = ["Huawei", "Sony", "Asus", "Apple", "Samsung"];
 
-  console.log(count);
+
   const numbersOfPages = Math.ceil(count / itemsPerPage);
   const pages = [...Array(numbersOfPages).keys()].map((e) => e + 1);
 
   const handlePaginationButton = (value) => {
     setCurrentPage(value);
-    console.log(value);
   };
 
   return (
