@@ -9,26 +9,35 @@ const AllProduct = () => {
   const [newProduct, setNewProduct] = useState(false);
   const [category, setCategory] = useState("");
   const [brandName, setBrandName] = useState("");
+  const [itemsPerPage, setItemsPerPage] = useState(6);
+  const [count, setCount] = useState(40);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get(
-        `http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}&category=${category}&brandName=${brandName}`
+        `http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}&category=${category}&brandName=${brandName}&page=${currentPage}&size=${itemsPerPage}`
       );
       setAllProduct(data);
-      console.log(data);
     };
     getData();
-  }, [name, sortPrice, newProduct, category, brandName]);
-console.log(brandName);
+  }, [
+    name,
+    sortPrice,
+    newProduct,
+    category,
+    brandName,
+    currentPage,
+    itemsPerPage,
+  ]);
 
   // search part is here
   const handleSearch = (e) => {
     e.preventDefault();
     const name = e.target.search.value;
     setName(name);
-    setCategory("")
-    setBrandName("")
+    setCategory("");
+    setBrandName("");
   };
 
   // search range part is here
@@ -39,9 +48,27 @@ console.log(brandName);
   };
 
   // category & brand names
-  const categorys = ["Wearables", "Tablets", "Audio", "Laptops", "Monitors", "Smartphones", "Desktops", "Televisions", "Gaming"]
-  const brandNames = ["Huawei", "Sony", "Asus", "Apple", "Samsung"]
+  const categorys = [
+    "Wearables",
+    "Tablets",
+    "Audio",
+    "Laptops",
+    "Monitors",
+    "Smartphones",
+    "Desktops",
+    "Televisions",
+    "Gaming",
+  ];
+  const brandNames = ["Huawei", "Sony", "Asus", "Apple", "Samsung"];
 
+  console.log(count);
+  const numbersOfPages = Math.ceil(count / itemsPerPage);
+  const pages = [...Array(numbersOfPages).keys()].map((e) => e + 1);
+
+  const handlePaginationButton = (value) => {
+    setCurrentPage(value);
+    console.log(value);
+  };
 
   return (
     <div className="max-w-7xl w-[90%] mx-auto my-20">
@@ -76,7 +103,9 @@ console.log(brandName);
               onChange={(e) =>
                 e.target.value === "Price"
                   ? setSortPrice("")
-                  : (setSortPrice(e.target.value), setCategory(""), setBrandName(""))
+                  : (setSortPrice(e.target.value),
+                    setCategory(""),
+                    setBrandName(""))
               }
               name="sort"
               className="py-2 px-3 rounded-xl font-semibold border border-[#FFA835] text-[#FFA835] select-info max-w-xs"
@@ -90,7 +119,9 @@ console.log(brandName);
           {/* sort by newest */}
           <div className="ml-5">
             <button
-              onClick={() => (setNewProduct(!newProduct), setCategory(""), setBrandName(""))}
+              onClick={() => (
+                setNewProduct(!newProduct), setCategory(""), setBrandName("")
+              )}
               className={`py-2 px-6 rounded-xl hover:bg-[#FFA835] ${
                 newProduct ? "bg-[#FFA835] text-white" : "bg-white"
               } hover:text-white duration-300 font-semibold border border-[#FFA835] text-[#FFA835] select-info`}
@@ -104,10 +135,81 @@ console.log(brandName);
       {/* bottom part */}
       <div className=" gap-0 md:gap-3 grid grid-cols-1 md:grid-cols-4 mt-6">
         {/* all products */}
-        <div className="col-span-3 grid grid-cols-1 md:grid-cols-3 gap-3">
-          {allProduct.map((product, idx) => (
-            <ProductCard key={idx} product={product}></ProductCard>
-          ))}
+        <div className="col-span-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {allProduct.map((product, idx) => (
+              <ProductCard key={idx} product={product}></ProductCard>
+            ))}
+          </div>
+             {/* pagination */}
+             <div className="flex justify-center">
+            <div className=" mt-12">
+              {/* previous */}
+              <button
+                disabled={currentPage === 1}
+                onClick={() => handlePaginationButton(currentPage - 1)}
+                className="px-4 py-2 mx-1  disabled:text-gray-500 capitalize rounded-full disabled:cursor-not-allowed disabled:bg-gray-200 disabled:hover:text-gray-500 hover:bg-[#FF5537]/80 bg-[#FF5537] text-white"
+              >
+                <div className="flex items-center -mx-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 mx-1 rtl:-scale-x-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M7 16l-4-4m0 0l4-4m-4 4h18"
+                    />
+                  </svg>
+
+                  <span className="mx-1">previous</span>
+                </div>
+              </button>
+
+              {/* numbers */}
+              {pages.map((btnNum) => (
+                <button
+                  onClick={() => handlePaginationButton(btnNum)}
+                  key={btnNum}
+                  className={`hidden px-4 py-2 mx-1 ${
+                    currentPage === btnNum ? "bg-[#FF5537] text-white" : ""
+                  } transition-colors duration-300 transform  rounded-full  sm:inline hover:bg-[#FF5537]/80  hover:text-white`}
+                >
+                  {btnNum}
+                </button>
+              ))}
+
+              {/* NEXT */}
+              <button
+                disabled={currentPage === numbersOfPages}
+                onClick={() => handlePaginationButton(currentPage + 1)}
+                className="px-4 py-2 mx-1 text-white disabled:text-gray-500 capitalize rounded-full disabled:cursor-not-allowed disabled:bg-gray-200 disabled:hover:text-gray-500 hover:bg-[#FF5537]/80 bg-[#FF5537] "
+              >
+                <div className="flex items-center -mx-1">
+                  <span className="mx-1">Next</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 mx-1 rtl:-scale-x-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* side component */}
@@ -137,11 +239,19 @@ console.log(brandName);
                   </span>
                 </p>
                 <div className="flex flex-wrap gap-2 ml-10 mt-2 text-sm">
-                  {
-                    categorys.map((c, idx) => <span key={idx} onClick={(e) => setCategory(e.target.innerText)} className={`border p-1 px-2 rounded-md  ${category === c ? "bg-[#FFA835] text-white" : "bg-gray-100"  } cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] `}>
+                  {categorys.map((c, idx) => (
+                    <span
+                      key={idx}
+                      onClick={(e) => setCategory(e.target.innerText)}
+                      className={`border p-1 px-2 rounded-md  ${
+                        category === c
+                          ? "bg-[#FFA835] text-white"
+                          : "bg-gray-100"
+                      } cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] `}
+                    >
                       {c}
-                    </span>)
-                  }
+                    </span>
+                  ))}
                 </div>
               </div>
 
@@ -166,11 +276,19 @@ console.log(brandName);
                   <span className="mx-2 text-lg font-medium">Brand Name</span>
                 </p>
                 <div className="flex flex-wrap gap-2 ml-10 mt-2 text-sm">
-                {
-                    brandNames.map((b,idx) => <span key={idx} onClick={(e) => setBrandName(e.target.innerText)} className={`border p-1 px-2 rounded-md  ${brandName === b ? "bg-[#FFA835] text-white" : "bg-gray-100"  } cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] `}>
+                  {brandNames.map((b, idx) => (
+                    <span
+                      key={idx}
+                      onClick={(e) => setBrandName(e.target.innerText)}
+                      className={`border p-1 px-2 rounded-md  ${
+                        brandName === b
+                          ? "bg-[#FFA835] text-white"
+                          : "bg-gray-100"
+                      } cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] `}
+                    >
                       {b}
-                    </span>)
-                  }
+                    </span>
+                  ))}
                 </div>
               </div>
 

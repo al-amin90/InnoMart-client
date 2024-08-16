@@ -1,36 +1,55 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"
-import React, { createContext } from 'react';
-import app from '../firebase/firebase.config';
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
+import React, { createContext, useEffect, useState } from "react";
+import app from "../firebase/firebase.config";
 
-export const AuthContext = createContext(null)
-const auth = getAuth(app)
+export const AuthContext = createContext(null);
+const auth = getAuth(app);
 
-const GoogleProvider = new GoogleAuthProvider()
+const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null)
+  const GoogleProvider = new GoogleAuthProvider();
 
-const logInWithGoogle = () => {
-    return signInWithPopup(auth, GoogleProvider)
-}
+  const logInWithGoogle = () => {
+    return signInWithPopup(auth, GoogleProvider);
+  };
 
-const createUser = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password)
-} 
+  const createUser = (email, password) => {
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
 
-const loginUser = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password)
-}
+  const loginUser = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+  };
 
-// ALL auth infos
-const authInfo = {
+  // observe the state change
+  useEffect(() => {
+    const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      console.log("Observe the current user", currentUser);
+      setUser(currentUser)
+    });
+
+    return () => {
+      unSubscribe();
+    };
+  }, []);
+
+  // ALL auth infos
+  const authInfo = {
+    user,
     logInWithGoogle,
     createUser,
-    loginUser
-
-}
-
-const AuthProvider = ({children}) => {
-    return (
-        <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
-    );
+    loginUser,
+  };
+  return (
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
+  );
 };
 
 export default AuthProvider;
