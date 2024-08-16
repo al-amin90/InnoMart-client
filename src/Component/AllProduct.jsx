@@ -7,39 +7,47 @@ const AllProduct = () => {
   const [sortPrice, setSortPrice] = useState([]);
   const [name, setName] = useState("");
   const [newProduct, setNewProduct] = useState(false);
+  const [category, setCategory] = useState("");
+  const [brandName, setBrandName] = useState("");
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(`http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}`);
+      const { data } = await axios.get(
+        `http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}&category=${category}&brandName=${brandName}`
+      );
       setAllProduct(data);
       console.log(data);
     };
     getData();
-  }, [name, sortPrice, newProduct]);
+  }, [name, sortPrice, newProduct, category, brandName]);
+console.log(brandName);
 
   // search part is here
   const handleSearch = (e) => {
     e.preventDefault();
     const name = e.target.search.value;
     setName(name);
+    setCategory("")
+    setBrandName("")
   };
 
-  // sort by price
-  console.log(sortPrice);
+  // search range part is here
+  const handleRangeSearch = (e) => {
+    e.preventDefault();
+    const name = e.target.search.value;
+    console.log(name);
+  };
 
-    // search range part is here
-    const handleRangeSearch = (e) => {
-      e.preventDefault();
-      const name = e.target.search.value;
-      console.log(name);
-    };
+  // category & brand names
+  const categorys = ["Wearables", "Tablets", "Audio", "Laptops", "Monitors", "Smartphones", "Desktops", "Televisions", "Gaming"]
+  const brandNames = ["Huawei", "Sony", "Asus", "Apple", "Samsung"]
+
 
   return (
     <div className="max-w-7xl w-[90%] mx-auto my-20">
       <h2 className="text-3xl font-bold">All Products</h2>
 
       <div className="mt-10 md:mt-16">
-
         {/* search & sort funsanality */}
         <div className="flex flex-col md:flex-row md:items-center justify-end space-y-2 items-end">
           {/* search */}
@@ -65,7 +73,11 @@ const AllProduct = () => {
           <div className="flex  md:ml-16 md:mx-6  items-center gap-3 justify-center">
             <p className="text-sm">Sort-By: </p>
             <select
-              onChange={(e) => e.target.value === "Price"? setSortPrice("") : setSortPrice(e.target.value)}
+              onChange={(e) =>
+                e.target.value === "Price"
+                  ? setSortPrice("")
+                  : (setSortPrice(e.target.value), setCategory(""), setBrandName(""))
+              }
               name="sort"
               className="py-2 px-3 rounded-xl font-semibold border border-[#FFA835] text-[#FFA835] select-info max-w-xs"
             >
@@ -78,8 +90,10 @@ const AllProduct = () => {
           {/* sort by newest */}
           <div className="ml-5">
             <button
-              onClick={() => setNewProduct(!newProduct)}
-              className={`py-2 px-6 rounded-xl hover:bg-[#FFA835] ${newProduct? "bg-[#FFA835] text-white" : "bg-white"} hover:text-white duration-300 font-semibold border border-[#FFA835] text-[#FFA835] select-info`}
+              onClick={() => (setNewProduct(!newProduct), setCategory(""), setBrandName(""))}
+              className={`py-2 px-6 rounded-xl hover:bg-[#FFA835] ${
+                newProduct ? "bg-[#FFA835] text-white" : "bg-white"
+              } hover:text-white duration-300 font-semibold border border-[#FFA835] text-[#FFA835] select-info`}
             >
               Newest Product
             </button>
@@ -123,33 +137,11 @@ const AllProduct = () => {
                   </span>
                 </p>
                 <div className="flex flex-wrap gap-2 ml-10 mt-2 text-sm">
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Wearables
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Tablets
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Audio
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Laptops
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Smartphones
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Monitors
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Desktops
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Televisions
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Gaming
-                  </span>
+                  {
+                    categorys.map((c, idx) => <span key={idx} onClick={(e) => setCategory(e.target.innerText)} className={`border p-1 px-2 rounded-md  ${category === c ? "bg-[#FFA835] text-white" : "bg-gray-100"  } cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] `}>
+                      {c}
+                    </span>)
+                  }
                 </div>
               </div>
 
@@ -174,21 +166,11 @@ const AllProduct = () => {
                   <span className="mx-2 text-lg font-medium">Brand Name</span>
                 </p>
                 <div className="flex flex-wrap gap-2 ml-10 mt-2 text-sm">
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Huawei
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Sony
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Asus
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Apple
-                  </span>
-                  <span className="border p-1 px-2 rounded-md cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] bg-gray-100">
-                    Samsung
-                  </span>
+                {
+                    brandNames.map((b,idx) => <span key={idx} onClick={(e) => setBrandName(e.target.innerText)} className={`border p-1 px-2 rounded-md  ${brandName === b ? "bg-[#FFA835] text-white" : "bg-gray-100"  } cursor-pointer hover:border-[#FFA835] hover:text-[#FFA835] `}>
+                      {b}
+                    </span>)
+                  }
                 </div>
               </div>
 
