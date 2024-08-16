@@ -3,7 +3,7 @@ import image from "../assets/products.png";
 const Banner = () => {
   return (
     <div className="hero bg-[#EFEFEF] min-h-[calc(100vh-72px)]">
-      <div className="flex flex-col gap-5 justify-center items-center max-w-7xl w-[90%] mx-auto lg:flex-row">
+      <div className="flex flex-col gap-5 justify-center items-center py-6 max-w-7xl w-[90%] mx-auto lg:flex-row">
         <div className="text-center flex-1 lg:text-left">
           <p className="text-lg md:text-xl text-[#FFA835] uppercase font-semibold">Up To 25% Discount Check it Out</p>
           <h1 className="text-4xl font-bold my-3">New Technology Are Here</h1>

@@ -1,30 +1,31 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 
 const AllProduct = () => {
   const [allProduct, setAllProduct] = useState([]);
   const [sortPrice, setSortPrice] = useState([]);
+  const [name, setName] = useState("");
+  const [newProduct, setNewProduct] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get("/Product.json");
+      const { data } = await axios.get(`http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}`);
       setAllProduct(data);
+      console.log(data);
     };
     getData();
-  }, []);
-  console.log(allProduct);
+  }, [name, sortPrice, newProduct]);
 
   // search part is here
   const handleSearch = (e) => {
     e.preventDefault();
     const name = e.target.search.value;
-    console.log(name);
+    setName(name);
   };
 
   // sort by price
-
+  console.log(sortPrice);
 
     // search range part is here
     const handleRangeSearch = (e) => {
@@ -37,9 +38,10 @@ const AllProduct = () => {
     <div className="max-w-7xl w-[90%] mx-auto my-20">
       <h2 className="text-3xl font-bold">All Products</h2>
 
-      <div className=" mt-16">
+      <div className="mt-10 md:mt-16">
+
         {/* search & sort funsanality */}
-        <div className="flex flex-col md:flex-row items-center md:justify-end ">
+        <div className="flex flex-col md:flex-row md:items-center justify-end space-y-2 items-end">
           {/* search */}
           <form
             onSubmit={handleSearch}
@@ -60,25 +62,24 @@ const AllProduct = () => {
           </form>
 
           {/* sort by price */}
-          <div className="flex mr-5 md:ml-16 mx-6 items-center gap-3 justify-center">
-            <p>Sort By:</p>
+          <div className="flex  md:ml-16 md:mx-6  items-center gap-3 justify-center">
+            <p className="text-sm">Sort-By: </p>
             <select
-              onChange={(e) => setSortPrice(e.target.value)}
+              onChange={(e) => e.target.value === "Price"? setSortPrice("") : setSortPrice(e.target.value)}
               name="sort"
-              className="py-2 px-3 rounded-xl font-semibold border border-[#FFA835] text-[#FFA835] select-info w-48 max-w-xs"
+              className="py-2 px-3 rounded-xl font-semibold border border-[#FFA835] text-[#FFA835] select-info max-w-xs"
             >
               <option defaultValue=""> Price</option>
-              <option defaultValue="Descending Order"> Descending Order</option>
-              <option defaultValue="Ascending Order"> Ascending Order</option>
+              <option defaultValue="Low to High"> Low to High</option>
+              <option defaultValue="High to Low"> High to Low</option>
             </select>
           </div>
 
           {/* sort by newest */}
-          <div className="">
+          <div className="ml-5">
             <button
-              onClick={(e) => setSortPrice(e.target.value)}
-              name="sort"
-              className="py-2 px-6 rounded-xl hover:bg-[#FFA835] hover:text-white duration-300 font-semibold border border-[#FFA835] text-[#FFA835] select-info"
+              onClick={() => setNewProduct(!newProduct)}
+              className={`py-2 px-6 rounded-xl hover:bg-[#FFA835] ${newProduct? "bg-[#FFA835] text-white" : "bg-white"} hover:text-white duration-300 font-semibold border border-[#FFA835] text-[#FFA835] select-info`}
             >
               Newest Product
             </button>
@@ -87,16 +88,16 @@ const AllProduct = () => {
       </div>
 
       {/* bottom part */}
-      <div className=" gap-3 grid grid-cols-4 mt-6">
+      <div className=" gap-0 md:gap-3 grid grid-cols-1 md:grid-cols-4 mt-6">
         {/* all products */}
-        <div className="col-span-3 grid grid-cols-3 gap-3">
+        <div className="col-span-3 grid grid-cols-1 md:grid-cols-3 gap-3">
           {allProduct.map((product, idx) => (
             <ProductCard key={idx} product={product}></ProductCard>
           ))}
         </div>
 
         {/* side component */}
-        <div className="rounded-lg border shadow-auth font-outfit p-7">
+        <div className="rounded-lg border shadow-auth font-outfit mt-12 md:mt-0 p-7">
           <nav className=" space-y-6 ">
             <div className="space-y-3 ">
               {/* Category Name part */}

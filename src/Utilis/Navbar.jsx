@@ -46,8 +46,8 @@ const Navbar = () => {
           <ul className="menu menu-horizontal gap-2 px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end gap-3">
-          <Link to="/login" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-2 md:px-5 font-medium py-1 md:py-2">Login</Link>
-          <Link to="/singUp" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-2 md:px-5 font-medium py-1 md:py-2">Sing Up</Link>
+          <Link to="/login" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-3 md:px-5 font-medium py-1 md:py-2">Login</Link>
+          <Link to="/singUp" className="bg-[#FFA835] text-xs rounded-full text-white cursor-pointer p-3 md:px-5 font-medium py-1 md:py-2">Sing Up</Link>
         </div>
       </div>
     </div>
