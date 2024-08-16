@@ -10,7 +10,7 @@ const AllProduct = () => {
   const [category, setCategory] = useState("");
   const [brandName, setBrandName] = useState("");
   const [itemsPerPage, setItemsPerPage] = useState(6);
-  const [count, setCount] = useState(40);
+  const [count, setCount] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -18,7 +18,8 @@ const AllProduct = () => {
       const { data } = await axios.get(
         `http://localhost:3000/products?productName=${name}&price=${sortPrice}&newProduct=${newProduct}&category=${category}&brandName=${brandName}&page=${currentPage}&size=${itemsPerPage}`
       );
-      setAllProduct(data);
+      setAllProduct(data.result);
+      setCount(data.count.length);
     };
     getData();
   }, [
